@@ -1,0 +1,10 @@
+#!groovy
+
+node {
+
+stage 'funciona'
+
+echo 'Holaaaaaaaa'
+
+
+}
