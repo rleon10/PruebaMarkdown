@@ -1,10 +1,28 @@
-#!groovy
+pipeline {
+    agent any
 
-node {
-
-stage 'funciona'
-
-echo 'Holaaaaaaaa'
-
-
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+    
+     stages {
+        stage('Pull from github') {
+            steps {
+                git 'https://github.com/rleon10/PruebaMarkdown.git'
+            }
+        }
+    }
+    
+    
+     stages {
+        stage('exito') {
+            steps {
+                echo 'Repositorio descargado'
+            }
+        }
+    }
 }
