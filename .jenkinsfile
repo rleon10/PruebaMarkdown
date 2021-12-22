@@ -18,11 +18,4 @@ pipeline {
     }
     
     
-     stages {
-        stage('exito') {
-            steps {
-                echo 'Repositorio descargado'
-            }
-        }
-    }
 }
